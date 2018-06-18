@@ -14,8 +14,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+            <state relative-caret-position="119">
+              <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -69,12 +69,7 @@
             <path>
               <item name="shutterfly_code_challange" type="b2602c69:ProjectViewProjectNode" />
               <item name="shutterfly_code_challange" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shutterfly_code_challange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shutterfly_code_challange" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="SQL_Challange" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -96,13 +91,14 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\A1316\PycharmProjects\shutterfly_code_challange\SQL_Challange" />
+      <recent name="C:\Users\A1316\PycharmProjects\shutterfly_code_challange\input" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\A1316\PycharmProjects\shutterfly_code_challange\src" />
       <recent name="C:\Users\A1316\PycharmProjects\shutterfly_code_challange" />
       <recent name="C:\Users\A1316\PycharmProjects\shutterfly_code_challange\src\com\shutterfly\code" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\A1316\PycharmProjects\shutterfly_code_challange\input" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -300,10 +296,20 @@
     <entry file="file://$PROJECT_DIR$/output/output.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/SQL_Challange/Design and Set up.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQL_Challange/data_model.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        <state relative-caret-position="119">
+          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

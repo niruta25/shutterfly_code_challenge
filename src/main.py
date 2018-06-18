@@ -3,6 +3,8 @@ import pandas as pd
 import os.path
 from datetime import datetime
 
+# ares of improvement: instead of taking dictionaries, we could define classes for each object and store the data in memory
+#the ingested data can also be stored in json files
 customer = {}
 site_visit = pd.DataFrame(columns=['key','event_time','customer_id','tags'])
 image = {}
@@ -65,7 +67,7 @@ def topXSimpleLTVCustomers(x):
     total_visits = site_visit.groupby(['customer_id']).agg(['count', 'min', 'max'])['event_time'] #to be improved
 
     #get total expenditure by the customer
-    total_sum = pd.DataFrame(order.values())    #check if all total_amount in USD
+    total_sum = pd.DataFrame(order.values())    #Future Scope: check if all total_amount in USD
     total_sum.total_amount = total_sum.total_amount.str[:-4].astype(float)
     total_sum = total_sum.groupby(['customer_id']).agg(['sum'])['total_amount']
     expend = total_sum.join(total_visits, how='outer')
@@ -95,7 +97,6 @@ def topXSimpleLTVCustomers(x):
         json.dump(out, outfile)
 
 
-
 os.chdir('..')
 path = os.path.join(os.getcwd(), 'input\events.txt')
 print(path)
@@ -106,4 +107,5 @@ with open(path) as f:
 for each_event in contents:
     ingest(each_event)
 
+#get top 5 cystomers
 topXSimpleLTVCustomers(5)
