@@ -3,7 +3,7 @@ import pandas as pd
 import os.path
 from datetime import datetime
 
-# ares of improvement: instead of taking dictionaries, we could define classes for each object and store the data in memory
+# areas of improvement: instead of taking dictionaries and pandas library as dataset, we could define classes for each object and store the data in memory
 #the ingested data can also be stored in json files
 customer = {}
 site_visit = pd.DataFrame(columns=['key','event_time','customer_id','tags'])
@@ -14,10 +14,10 @@ order = {}
 def add_customer(each_event):
     # print(customer.has_key(each_event['key']))
     global customer
-    if each_event['key'] not in customer:
+    if each_event['key'] not in customer: # check to see the latest customer is updated in our datbase, as the receiving data is un ordered
         customer[each_event['key'].encode('utf-8')] = each_event
     else:
-        if each_event['event_time'] > customer[each_event['key']]['event_time']:
+        if each_event['event_time'] > customer[each_event['key']]['event_time']: #making sure that latest data is present in database
             customer[each_event['key'].encode('utf-8')] = each_event
 
 #method to add site visit
